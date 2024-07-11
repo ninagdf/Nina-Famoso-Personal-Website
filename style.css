@@ -1,0 +1,878 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100,200,300,400,500,600,700,800,... 900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+*
+.just-me again down here-regular {
+  font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+  min-height: 100%;
+  display: flex; 
+  flex-direction: column;
+  }
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.website {
+  background: transparent url('Screens/Background\ all.png') 50% / cover no-repeat;
+  position: relative;
+  width: 1920px;
+  height: 10078px;
+  z-index: -101000;
+  overflow: hidden;
+}
+
+@keyframes fade-up {
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+      opacity:1;
+      transform: translateY(0px) scale(1)
+    }
+}
+  
+header {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  z-index: 1000; 
+}
+
+header.sticky{
+  padding: 12px 100px;
+  background: #D02F07;
+}
+
+header .logo{
+  position: relative;
+  font-weight: 1000;
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 0.8;
+}
+
+header .logo .description{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li{
+  position: relative;
+  list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: .5px;
+  font-weight: 500;
+  transition: 0.6s;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Apply styles for screens up to 767px wide */
+  header, header ul {
+    flex-direction: column;
+  }
+}
+
+
+
+.home-pic {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 0;
+  left: -500;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105vh;
+  z-index: 999;
+}
+
+
+#about {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 135%;
+  left: 60%;
+  height:680px;
+  width:680px;
+  object-fit: fill;
+  display: flex;
+  z-index: 998;
+}
+
+/*____________________SECTION 2 - ABOUT____________________________*/
+.meet{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  z-index: 998;
+  top: -9730px; 
+  left: 180px;
+  font-size: 17px;
+}
+.meet #home{
+  color: #D02F07;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 1.85;
+}
+.meet .highlight1 {
+  color: #EFBE2C; 
+}
+.meet .description1 {
+  line-height: 1.5;
+}
+.meet .highlight2 {
+  background-color: #EFBE2C;
+  padding: 2px 5px;
+  border-radius: 5px;;
+}
+
+.graphic1 {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 160%;
+  left: 42.5%;
+  height:80px;
+  object-fit: fill;
+  display: flex;
+  z-index: 998;
+}
+
+.graphic2 {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 198%;
+  left: 12%;
+  height:80px;
+  object-fit: fill;
+  display: flex;
+  z-index: 998;
+}
+
+#home {
+  width: 16ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 4s steps(20) alternate infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 1 - BUTTONS____________________________*/
+.buttons1 {
+  padding: 50px;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  text-decoration: none;
+  z-index: 999;
+  top: -10761px; 
+  text-align: center;
+  font-size: 17px;
+  line-height: 4.5;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.buttons1 #scrollButton,
+.buttons1 #scrollButton2 {
+  align-self: center;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem 6rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#scrollButton{
+  background-color: #55a88f;
+
+}
+#scrollButton2{
+  background-color: #e28063;
+
+}
+#scrollButton:hover,
+#scrollButton2:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #fff;
+}
+
+#scrollButton:focus,
+#scrollButton2:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 2 - BUTTONS____________________________*/
+.buttons2 {
+  padding: 50px;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  text-decoration: none;
+  z-index: 998;
+  top: -9970px; 
+  left: 130px;
+  font-size: 17px;
+  
+}
+
+.buttons2 .yellow-button,
+.buttons2 .red-button,
+.buttons2 .green-button {
+  background-color: #0C0C0A;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 19px;
+  text-decoration: none;
+  margin-right: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons2 .yellow-button:hover,
+.buttons2 .red-button:hover,
+.buttons2 .green-button:hover {
+  border-radius: 12px;
+  padding: 12px 19px;
+  background-color: #EFBE2C;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+}
+
+.buttons2 .red-button:hover {
+  background-color: #224191; 
+}
+
+.buttons2 .green-button:hover {
+  background-color: #197056; 
+}
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 3____________________________*/
+
+#experiences{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  z-index: 998;
+  top: -9700px; 
+  left: 300px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 8.5;
+}
+
+.subheading1,
+.subheading2,
+.subheading3{
+  font-family: "Just Me Again Down Here", cursive;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  color: #D02F07;
+  text-decoration: none;
+  z-index: 998;
+  font-size: 40px;
+  line-height: 5;
+}
+.subheading1{
+  top: -10490px; 
+  left: 300px;
+}
+.subheading2{
+  top: -10390px; 
+  left: 300px;
+  line-height: 5.5;
+}
+.subheading3{
+  top: -11490px; 
+  left: 1050px;
+  line-height: 13;
+}
+
+.subtext1,
+.subtext2,
+.subtext3,
+.subtext4,
+.subtext5,
+.subtext6{
+  font-weight: 500;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  text-decoration: none;
+  z-index: 998;
+  font-size:17px;
+  line-height: 1.5;
+}
+.subtext1{
+  top: -12240px; 
+  left: 300px;
+}
+.subtext2{
+  top: -12090px; 
+  left: 300px;
+}
+.subtext3{
+  top: -11810px; 
+  left: 300px;
+}
+.subtext4{
+  top: -11670px; 
+  left: 300px;
+}
+.subtext5{
+  top: -12470px; 
+  left: 1050px;
+}
+.subtext6{
+  top: -12240px; 
+  left: 1050px;
+}
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 4 - Skills____________________________*/
+.skillscontainer1,
+.skillscontainer2{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items:center;
+  z-index: 999;
+  position: relative;
+  top: -11590px; 
+}
+.single-img{
+  padding: 0 30px 160px;  
+}
+.single-img img{
+  width: 85%; 
+}
+/* texts */
+#skills{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  color: #FCC52D;
+  text-decoration: none;
+  z-index: 998;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 6.4;
+  position: absolute;
+  top: 370%;
+  left: 45%;
+  animation: rotateText 2s linear infinite alternate;
+  
+}
+
+.otherskills{
+  font-family: "Just Me Again Down Here", cursive;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  animation: rotateText 2s linear infinite alternate;
+}
+
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-2.5deg);
+  }
+}
+
+
+
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 5 - Photography____________________________*/
+
+#portfolio {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 515%; 
+  left: 70%; 
+  height: 180px;
+  object-fit: cover;
+  display: flex;
+  z-index: 998;
+}
+
+.photogpic1 {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 527%;
+  left: 10%;
+  max-width: 130%; 
+  object-fit: cover; 
+  display: flex;
+  z-index: 998;
+}
+
+.photogpic2 {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 614%;
+  left: 25%; 
+  object-fit: cover; 
+  display: flex;
+  z-index: 998;
+}
+
+.photogportfolio{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  z-index: 998;
+}
+.photog,
+.photogdesc{
+  position: absolute;
+  margin-left: 500px;
+}
+.photog{
+  font-size: 35px;
+  font-weight: 750;
+  margin-top: -9955px; 
+}
+.photogdesc{
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: -9885px; 
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.buttons3 {
+  padding: 50px;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  z-index: 999;
+  position: relative;
+  text-decoration: none;
+  top: -10010px; 
+  left: 1220px;
+  font-size: 17px;
+  line-height: 4.5;
+}
+.photogportfoliobutton{
+  color: #fff;
+  background-color: #000; 
+  border-radius: 25px;
+  padding: 15px 40px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+.photogportfoliobutton:hover {
+  background-color: #0056b3; 
+  transition: 0.5s;
+}
+
+.photogbanner {
+  animation: rotateImage 2s linear infinite alternate; 
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 5 - art____________________________*/
+
+.banner2 {
+  animation: fade-up 1s, rotateBanner 2s linear infinite alternate; /* Add rotateBanner animation */
+  transition: 0.6s;
+  position: absolute;
+  top: 725%; 
+  left: 10%; 
+  height: 180px;
+  object-fit: cover;
+  display: flex;
+  z-index: 998;
+}
+
+@keyframes rotateBanner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+.container{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  z-index: 999;
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+
+  /* Positioning */
+  position: absolute;
+  top: 745%;
+  left: 20%;
+}
+.photo-gallery{
+  display: flex;
+  gap: 20px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+@media(max-width:768px) {
+  .photo-gallery{
+    flex-direction: column;
+  }
+}
+
+.artportfolio{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  z-index: 999;
+  top: -7965px; 
+  text-align: center;
+  font-size: 35px;
+  font-weight: 750;
+  font-size: 35px;
+}
+
+.buttons4 {
+  padding: 50px;
+  animation: fade-up 1s;
+  transition: 0.6s;
+  z-index: 999;
+  position: relative;
+  text-decoration: none;
+  top: -8010px; 
+  text-align: center;
+  font-size: 17px;
+  line-height: 4.5;
+}
+.artportfoliobutton{
+  color: #fff;
+  background-color: #D02F07; 
+  border-radius: 25px;
+  padding: 15px 40px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+.artportfoliobutton:hover {
+  background-color: #0056b3;
+  transition: 0.5s;
+}
+/*____________________________________________________________________________________*/
+
+/*____________________SECTION 6 - contacts____________________________*/
+
+#contact,
+.contacts{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: relative;
+  text-decoration: none;
+  z-index: 999; 
+  text-align: center;
+  
+}
+#contact{
+  font-family: "Montserrat", sans-serif;
+  
+  font-size: 35px;
+  font-weight: 750;
+  font-size: 55px;
+  color: #D02F07;
+  top: -7560px;
+}
+.contacts{
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #D02F07;
+  top: -7300px;  
+}
+.contactme{
+  font-family: "Montserrat", sans-serif;
+  line-height:2;
+  font-size: 32px;
+}
+.spaceadjust{
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+.highlight3{
+  font-family: "Montserrat", sans-serif;
+  color: #66963E;
+}
+.social-media {
+  display: flex;
+  gap: 10px; 
+}
+.social-link {
+  display: inline-block;
+  width: 40px; 
+  height: 40px; 
+}
+.social-link img {
+  width: 100%;
+  height: 100%;
+}
+.threestars{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 9000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+
+.yellowstar {
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 15%;
+  left: 48.5%;
+  height:80px;
+  object-fit: fill;
+  display: flex;
+  z-index: 998;
+  -webkit-animation: scaling-special 1s 4 ease;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes scaling-special {
+  from {
+      -webkit-transform: scale(0.2);
+  }
+  to {
+      -webkit-transform: scale(1);
+  }
+}
+
+.graphic1,
+.threestars,
+.redstar,
+.yellowstar-2,
+.yellowstar-3 {
+  -webkit-animation: scaling 1s 4 ease;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes scaling {
+  from {
+      -webkit-transform: scale(0.7);
+  }
+  to {
+      -webkit-transform: scale(1);
+  }
+}
+
+.yellowstar-2{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 280%;
+  left: 32%;
+  height:80px;
+  object-fit: fill;
+  display: flex;
+  z-index: 998;
+  -webkit-animation: scaling 1s 4 ease;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+.redstar{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 323%;
+  left: 48.5%;
+  height:80px;
+  object-fit: fill;
+  display: flex;
+  z-index: 999;
+  -webkit-animation: scaling 1s 4 ease;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+
+#rotatingImage {
+  position: relative;
+  animation: rotateImage 2s linear infinite alternate; 
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+
+.waves1{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 360%;
+  left: 35%;
+  width: 100%;
+  display: flex;
+  height:80px;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.yellowstar-3{
+  animation: fade-up 1s;
+  transition: 0.6s;
+  position: absolute;
+  top: 640%;
+  left: 18%;
+  height:80px;
+  object-fit: fill;
+  display: flex;
+  z-index: 998;
+  -webkit-animation: scaling 1s 4 ease;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+#wrapper{top:-352px;}
+
